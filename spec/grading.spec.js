@@ -49,7 +49,9 @@ describe ("Grading Tests: ", function () {
 
    it("HTML contains correct number of sections", function() {
       let childrenElements = container.body.children;
-      console.log(childrenElements)
+      for (let i = 0; i < childrenElements.length; i++) {
+         console.log(childrenElements[i]);
+      }
 
       expect(childrenElements.length).toBeGreaterThanOrEqual(3);
       expect(childrenElements.length).toBeLessThanOrEqual(10);
